@@ -32,7 +32,7 @@ export default function ProductCard(props) {
       <img
         src={productInfo.images[0]}
         alt={name}
-        className="w-full h-full object-cover"
+        className="md:w-[20rem] md:h-[12rem] w-full h-full object-cover"
       />
       <div className="flex flex-col gap-2 p-4">
         <div className="flex items-center justify-between">
