@@ -7,6 +7,7 @@ export default function ProductPage(props) {
   const product = useCart((state) => state.product);
   const { cost, productInfo, name, description } = product;
   const addItemToCart = useCart((state) => state.addItemToCart);
+  const cartItems = useCart((state) => state.cart);
 
   if (!product?.name) {
     window.location.href = "/";
@@ -22,6 +23,8 @@ export default function ProductPage(props) {
     };
     addItemToCart({ newItem });
   };
+
+  console.log(cartItems);
 
   return (
     <div className="flex flex-col p-4">
