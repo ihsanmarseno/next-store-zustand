@@ -23,8 +23,6 @@ export async function POST(request) {
     });
     return NextResponse.json({ session });
   } catch (err) {
-    console.log("BROKED");
-    console.log(err);
     return new Response("Error", {
       status: 405,
     });
